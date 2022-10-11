@@ -17,8 +17,8 @@ public class BtnPressed : MonoBehaviour
         if(isOn == false){
             LeftLight.GetComponent<Light>().intensity = 3;
             RightLight.GetComponent<Light>().intensity = 3;
-            MyModelLights.GetComponent<Light>().intensity = 3;
-            ModelLights.GetComponent<Light>().intensity = 4;
+            MyModelLights.GetComponent<Light>().intensity = 6;
+            ModelLights.GetComponent<Light>().intensity = 6;
             isOn = true;
             }
         else {

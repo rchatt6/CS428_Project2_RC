@@ -6,7 +6,7 @@ public class CoffeCollisionDetection : MonoBehaviour
 {
     //public GameObject item;
     public AudioClip audio;
-    public GameObject item;
+    public GameObject item; //what you want to spawn
     public GameObject spawnlocation;
     // Start is called before the first frame update
     /*void Start()
