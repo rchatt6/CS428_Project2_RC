@@ -8,15 +8,26 @@ public class BtnPressed : MonoBehaviour
     public GameObject RightLight;
     public GameObject MyModelLights;
     public GameObject ModelLights;
+    bool isOn = false;
  
  
 
     private void OnTriggerEnter(Collider collider)
     {
-        LeftLight.GetComponent<Light>().intensity = 3;
-        RightLight.GetComponent<Light>().intensity = 3;
-        MyModelLights.GetComponent<Light>().intensity = 3;
-        ModelLights.GetComponent<Light>().intensity = 4;
+        if(isOn == false){
+            LeftLight.GetComponent<Light>().intensity = 3;
+            RightLight.GetComponent<Light>().intensity = 3;
+            MyModelLights.GetComponent<Light>().intensity = 3;
+            ModelLights.GetComponent<Light>().intensity = 4;
+            isOn = true;
+            }
+        else {
+            LeftLight.GetComponent<Light>().intensity = 0;
+            RightLight.GetComponent<Light>().intensity = 0;
+            MyModelLights.GetComponent<Light>().intensity = 0;
+            ModelLights.GetComponent<Light>().intensity = 0;
+            isOn = false;
+        }
 
     }
 }
