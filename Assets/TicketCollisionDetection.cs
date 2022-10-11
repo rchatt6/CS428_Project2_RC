@@ -23,7 +23,7 @@ public class TicketCollisionDetection : MonoBehaviour
         
         AudioSource.PlayClipAtPoint(audio, transform.position);
 
-        Instantiate(item, new Vector3(-1.2f, -.4f, 5.5f), Quaternion.Euler(new Vector3(-90f, 0f, 0f)));
+        Instantiate(item, new Vector3(-1.2f, -.4f, 5.2f), Quaternion.Euler(new Vector3(-90f, 0f, 0f)));
 
     }
 }
