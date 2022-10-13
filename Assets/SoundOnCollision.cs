@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundOnCollision : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class SoundOnCollision : MonoBehaviour
     void OnCollisionEnter()
     {
         int sound = Random.Range(0, audio.Length);
-        AudioSource.PlayClipAtPoint(audio[sound], transform.position);
+        //AudioSource.PlayClipAtPoint(audio[sound], transform.position);
+        GetComponent<AudioSource>().PlayOneShot(audio[sound]);
     }
 
 }
